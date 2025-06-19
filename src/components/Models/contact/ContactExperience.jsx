@@ -2,7 +2,6 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Computer } from "../Computer";
 
-
 const ContactExperience = () => {
   return (
     <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>

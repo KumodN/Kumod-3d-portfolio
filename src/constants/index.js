@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 5, suffix: "+", label: "Academic Projects Completed" },
+  { value: 3, suffix: "+", label: "Personal Projects" },
+  { value: 90, suffix: "+", label: "GitHub Contributions" },
+  { value: 100, suffix: "%", label: "Passion for Learning" },
 ];
 
 const logoIconsList = [
@@ -91,26 +91,25 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "React",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    name: "Java",
+    imgPath: "/images/logos/java.png",
   },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "Three - JS",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Project Management",
     imgPath: "/images/logos/git.svg",
   },
-  
 ];
 
 const techStackIcons = [
@@ -121,7 +120,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Java Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -250,24 +249,30 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    url: "https://www.instagram.com/",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    url: "https://www.facebook.com/",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    url: "https://www.x.com/",
-    imgPath: "/images/x.png",
+    name: "mail",
+    url: "mailto:kumodnenuk@gmail.com?subject=Inquiry&body=Hi, I would like to know more about your services.",
+    imgPath: "/images/mail.png",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/kumoddesilva",
     imgPath: "/images/linkedin.png",
+  },
+  {
+    name: "git",
+    url: "https://www.github.com/KumodN",
+    imgPath: "/images/git.png",
+  },
+
+  {
+    name: "x",
+    url: "https://www.x.com/KumodNenuka",
+    imgPath: "/images/x.png",
+  },
+  {
+    name: "whatsapp",
+    url: "https://wa.me/94761130407?text=Hello%20Kumod%2C%20I%20am%20interested%20to%20hire%20you.",
+    imgPath: "/images/wa.png",
   },
 ];
 
