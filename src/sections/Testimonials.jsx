@@ -2,6 +2,7 @@ import React from "react";
 import TitleHeader from "../components/TitleHeader";
 import { testimonials } from "../constants";
 import GlowCard from "../components/GlowCard";
+import { div } from "framer-motion/client";
 
 const Testimonials = () => {
   return (

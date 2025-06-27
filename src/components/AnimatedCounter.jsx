@@ -25,7 +25,7 @@ const AnimatedCounter = () => {
           <div
             key={index}
             ref={(el) => (counterRef.current[index] = el)}
-            className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
+            className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center card glassCard"
           >
             <div className="counter-number text-white text-5xl font-bold mb-2">
               {triggered ? (

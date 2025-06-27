@@ -5,8 +5,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container flex flex-col md:flex-row justify-between items-center md:items-start gap-5 md:gap-0">
-        <div className="flex flex-col items-center md:items-start">
-          <a href="/">Visit my blog</a>
+        <div className="flex flex-col items-center md:items-start border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-8 md:size-10 cursor-pointer transition-all duration-300 hover:bg-black-50 hover:scale-110 hover:rotate-3;">
+          <a
+            href="https://kumodcodes.wordpress.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>
         </div>
 
         <div className="flex flex-col items-center">

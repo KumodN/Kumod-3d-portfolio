@@ -50,8 +50,8 @@ const TechStack = () => {
           {/* Image tech stacks icons */}
           {techStackImgs.map((icon) => (
             <div key={icon.name} className="flex flex-col items-center">
-              <div className="card-border tech-card overflow-hidden group rounded-full aspect-square w-50 flex items-center justify-center">
-                <div className="tech-card-animated-bg" />
+              <div className="card-border overflow-hidden group rounded-full aspect-square w-50 flex items-center justify-center card glassCard">
+                <div className="glare-hover" />
                 <div className="tech-card-content">
                   <div className="tech-icon-wrapper">
                     <img src={icon.imgPath} />

@@ -1,5 +1,6 @@
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
+import GlowCard from "../components/GlowCard";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
@@ -63,15 +64,21 @@ const Hero = () => {
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
-              id="button"
+              id="work"
               text="See my Work"
             />
           </div>
         </header>
         {/* Right 3D model */}
-        <figure>
+
+        <figure className="flex justify-center items-center w-full">
           <div className="hero-3d-layout">
-            <HeroExperience />
+            <img
+              src="/images/hero.png"
+              alt="portrait"
+              className="w-full h-full object-cover"
+            />
+            {/* <HeroExperience /> */}
           </div>
         </figure>
       </div>

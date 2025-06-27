@@ -68,9 +68,9 @@ const Contact = () => {
             title="Get in Touch – Let’s Connect"
             sub="💬 Have questions or ideas? Let’s talk! 🚀"
           />
-          <div className="grid-12-cols mt-16">
-            <div className="xl:col-span-5">
-              <div className="flex-center card-border rounded-xl px-10">
+          <div className="grid-12-cols mt-10">
+            <div className="xl:col-span-5 contact">
+              <div className="glassCard flex-center card-border rounded-xl px-10 py-5">
                 <form
                   ref={formRef}
                   onSubmit={handleSubmit}
@@ -154,7 +154,7 @@ const Contact = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="colored"
+        theme="dark"
         style={{ zIndex: 9999 }}
       />
     </>

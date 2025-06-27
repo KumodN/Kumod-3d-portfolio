@@ -1,3 +1,4 @@
+// -------------------------------Hero----------------------------------------------
 const navLinks = [
   {
     name: "Work",
@@ -35,6 +36,48 @@ const counterItems = [
   { value: 100, suffix: "%", label: "Passion for Learning" },
 ];
 
+//--------------------------------------Work--------------------------------------------
+export const projects = [
+  {
+    title: "MedicareHub - Health Insurance Management System",
+    description:
+      "A web app to manage health insurance plans, claims, and users efficiently.",
+    imgPath: "/images/project1.png",
+    bgColor: "#f9f9f9",
+    link: "https://github.com/KumodN/Health-Insurance-Management_WebPages",
+    tech: "[ HTML | CSS | JavaScript | PHP | MySQL ]",
+  },
+  {
+    title: "Clear Vision - Optical Management System",
+    description:
+      "Full-stack app for managing optical inventory and orders efficiently.",
+    imgPath: "/images/project2.png",
+    bgColor: "#ffefdb",
+    link: "https://github.com/KumodN/Optical_Business_Management_System",
+    tech: "[ React.js | Express.js | Node.js | MongoDB ]",
+  },
+  {
+    title: "WashIt - Laundry Management System",
+    description:
+      "Automated laundry service web platform built with modern technologies.",
+    imgPath: "/images/project3.png",
+    bgColor: "#ffe7db",
+    link: "https://github.com/KumodN/WashIt-Online-Laundry-Management-System",
+    tech: "[ HTML | CSS | JavaScript | Java (Servlet, JDBC, JSP) | MySQL | Apache Tomcat ]",
+  },
+  {
+    title: "Pocket Ledger - Personal Finance Tracker",
+    description:
+      "A mobile app to track income, expenses, and savings goals efficiently.",
+    imgPath: "/images/project4.png",
+    bgColor: "#fce4ec",
+    link: "https://github.com/KumodN/PersonalFinanceTracker",
+    tech: "[ Kotlin | Maven ]",
+  },
+];
+
+//---------------------------Logo-Icon List-------------------------------
+
 const logoIconsList = [
   {
     imgPath: "/images/logos/company-logo-1.png",
@@ -71,16 +114,17 @@ const logoIconsList = [
   },
 ];
 
+//----------------------Feature Crads ---------------------------------------------
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/academic.jpg",
+    title: "Academic Excellence",
+    desc: "Recognized on the Dean’s List for outstanding academic performance and consistent dedication to learning.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/team.jpg",
+    title: "Collaborative Team Player",
+    desc: "Thrives in team environments by fostering open communication, supporting peers, and contributing actively to group success.",
   },
   {
     imgPath: "/images/time.png",
@@ -89,6 +133,7 @@ const abilities = [
   },
 ];
 
+//--------------------Tech Stack -------------------------------
 const techStackImgs = [
   {
     name: "React",
@@ -97,6 +142,18 @@ const techStackImgs = [
   {
     name: "Java",
     imgPath: "/images/logos/java.png",
+  },
+  {
+    name: "Docker",
+    imgPath: "/images/logos/docker.png",
+  },
+  {
+    name: "PHP",
+    imgPath: "/images/logos/php.png",
+  },
+  {
+    name: "MongoDB",
+    imgPath: "/images/logos/mongodb.png",
   },
   {
     name: "Backend Developer",
@@ -145,6 +202,7 @@ const techStackIcons = [
   },
 ];
 
+// -----------------------Experience------------------------------------------
 const expCards = [
   {
     review:
@@ -202,6 +260,7 @@ const expLogos = [
   },
 ];
 
+//-------------------------Testimonial-------------------------------------
 const testimonials = [
   {
     name: "Esther Howard",
@@ -247,6 +306,7 @@ const testimonials = [
   },
 ];
 
+//----------------------Footer-----------------------------------
 const socialImgs = [
   {
     name: "mail",

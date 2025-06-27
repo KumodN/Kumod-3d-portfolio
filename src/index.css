@@ -81,7 +81,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-5 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-5 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-between;
   }
 
   .hero-text {
@@ -99,14 +99,20 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    @apply xl:w-[450px] xl:h-[600px] w-[250px] h-[400px] 
+         bg-white/1 rounded-full overflow-hidden shadow-xl;
   }
 
   .navbar {
     @apply fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
 
     &.scrolled {
-      @apply top-0 bg-black py-3;
+      @apply top-0 py-3;
+      backdrop-filter: blur(2px) saturate(200%);
+      -webkit-backdrop-filter: blur(2px) saturate(200%);
+      background-color: rgba(17, 25, 40, 0.1);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
     }
 
     &.not-scrolled {
@@ -145,7 +151,7 @@ section {
       @apply flex;
 
       .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+        @apply px-5 py-2 rounded-lg bg-white-50 text-black group-hover:bg-black-50 transition-colors duration-600;
 
         span {
           @apply group-hover:text-white transition-colors duration-300;
@@ -189,7 +195,7 @@ section {
       @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
 
       .image-wrapper {
-        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
+        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-0 py-0;
       }
 
       img {
@@ -449,6 +455,14 @@ section {
   transition: border-color 1s ease-in-out;
 }
 
+.glassCard {
+  backdrop-filter: blur(2px) saturate(200%);
+  -webkit-backdrop-filter: blur(2px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
 .card-hover-effect {
   @apply transition-all duration-300 hover:scale-105 hover:rotate-1 hover:shadow-lg cursor-pointer;
 }
@@ -492,4 +506,59 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+
+/* Feature Cards */
+.perspective {
+  perspective: 1200px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 400px;
+  height: 220px; /* Set your preferred card height */
+  position: relative;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-container:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+}
+
+.card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: #121212;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
 }

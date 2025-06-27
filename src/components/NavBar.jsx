@@ -29,11 +29,23 @@ const NavBar = () => {
             ))}
           </ul>
         </nav>
-        <a className="contact-btn group" href="#contact">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            className="group relative inline-flex items-center justify-center px-6 py-3 overflow-hidden text-white glassCard border border-white rounded-md card hover:text-white"
+            href="/documents/KumodDeSilva-CV.pdf"
+            download
+          >
+            <div className="inner">
+              <span>Download CV</span>
+            </div>
+          </a>
+
+          <a className="contact-btn group" href="#contact">
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+        </div>
       </div>
     </header>
   );
