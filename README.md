@@ -1,16 +1,39 @@
-<<<<<<< HEAD
-# React + Vite
+# 🚀 Kumod De Silva - Personal 3D Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using modern web technologies and enhanced with stunning 3D visuals. It showcases my work, experience, and skills, all wrapped in a smooth, animated user interface.
 
-Currently, two official plugins are available:
+## 🧠 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Interactive 3D Models** created with [Three.js](https://threejs.org/)
+- ✨ **Smooth Animations** using [GSAP (GreenSock Animation Platform)](https://gsap.com/)
+- ⏳ **Custom Loader/Spinner** for 3D content loading
+- 📱 Responsive design for mobile and desktop
 
-## Expanding the ESLint configuration
+## 📁 Main Sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Kumod-3d-portfolio
->>>>>>> 2184e577c2a10c49bd67247331cb99b28c51604a
+- **Hero** – 3D intro with animated greeting and background
+- **Work** – Projects showcased with animated 3D thumbnails or effects
+- **Experience** – Timeline or cards showing job/role history
+- **Skills** – Interactive or animated skill badges/icons
+- **Testimonials** – Animated testimonial cards
+- **Contact** – A 3D model integrated with the contact form
+
+## 🛠️ Built With
+
+- **React** – Frontend framework
+- **Three.js** – 3D rendering and model integration
+- **GSAP** – Smooth animations and scroll effects
+- **HTML5/CSS3** – Styling and layout
+- **Vite or Webpack** – (based on your setup) for build optimization
+
+## 📸 Preview
+
+
+
+## 🧪 Running Locally
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+npm install
+npm run dev
